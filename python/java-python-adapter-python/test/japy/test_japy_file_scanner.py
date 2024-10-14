@@ -9,7 +9,7 @@ class TestJapyFileScanner(TestCase):
 
     def test_scan_for_decorated_methods(self):
 
-        decorated_methods = self.file_scanner.scan_for_decorated_methods()
+        decorated_methods = self.file_scanner.scan_for_decorated_functions()
 
         method_names = decorated_methods.keys()
 

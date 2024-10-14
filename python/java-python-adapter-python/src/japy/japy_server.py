@@ -8,7 +8,7 @@ import threading
 class JapyServer:
 
     def __init__(self, japy_file_scanner: JapyFileScanner):
-        self.methods = dict(japy_file_scanner.scan_for_decorated_methods())
+        self.methods = dict(japy_file_scanner.scan_for_decorated_functions())
         self.app = web.Application()
         self.define_routes()
         self.server_runs = False
