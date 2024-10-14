@@ -40,7 +40,7 @@ class JapyServer:
 
             if data['name'] not in self.methods:
                 return web.json_response(
-                    {'error': f'Method {data["name"]} could not be found', 'existing_methods': self.methods},
+                    {'error': f'Method {data["name"]} could not be found', 'existingMethods': list(self.methods.keys())},
                     status=404)
 
             func = self.methods[data['name']]
