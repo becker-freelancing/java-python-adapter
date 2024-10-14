@@ -1,7 +1,8 @@
 import os
 import inspect
-import importlib.util
-from japy.method import Method
+from japy.japy_function_wrapper import JapyFunctionWrapper
+import ast
+import importlib
 
 
 class JapyFileScanner:
@@ -19,40 +20,66 @@ class JapyFileScanner:
                     python_files.append(full_path)
         return python_files
 
-    def __load_module_from_file(self, filepath):
-        module_name = os.path.splitext(os.path.basename(filepath))[0]
-        spec = importlib.util.spec_from_file_location(module_name, filepath)
-        module = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(module)
-        return module
+    def __load_imports(self, tree, func_locals=None):
+        if func_locals is None:
+            func_locals = {}
+        for node in tree.body:
+            if isinstance(node, ast.Import):
+                for alias in node.names:
+                    module_name = alias.name
+                    module = importlib.import_module(module_name)
+                    for attr in dir(module):
+                        if not attr.startswith("__"):
+                            func_locals[attr] = getattr(module, attr)
+            elif isinstance(node, ast.ImportFrom):
+                module_name = node.module
+                module = importlib.import_module(module_name)
+                for alias in node.names:
+                    func_locals[alias.name] = getattr(module, alias.name)
 
-    def __find_decorated_methods(self, module):
-        decorated_methods = []
-        for name, func in inspect.getmembers(module, inspect.isfunction):
-            if hasattr(func, 'is_japy_method'):
-                decorated_methods.append((name, func))
-        return decorated_methods
+        return func_locals
 
-    def __parse_method(self, func):
-        signature = inspect.signature(func)
-        parameters = signature.parameters
-        return Method(func, parameters)
+    def __is_japy_function(self, func):
+        for decorator in func.decorator_list:
+            if decorator.id == "japy_function":
+                return True
+        return False
 
-    def scan_for_decorated_methods(self):
+    def __load_functions(self, tree, func_locals):
+        functions = {}
+        for node in tree.body:
+            if isinstance(node, ast.FunctionDef) and self.__is_japy_function(node):
+                func_code = compile(ast.Module(body=[node], type_ignores=[]), filename="<ast>", mode="exec")
+                exec(func_code, func_locals)
+                functions[node.name] = node
+
+        return func_locals, functions
+
+    def __load_functions_for_file(self, filepath):
+        with open(filepath, 'r') as file:
+            source_code = file.read()
+
+        tree = ast.parse(source_code)
+
+        func_locals = self.__load_imports(tree)
+        func_locals, functions = self.__load_functions(tree, func_locals)
+        return func_locals, functions
+
+    def __to_function(self, func_name, func_locals, ast_func):
+        return JapyFunctionWrapper(func_name, func_locals, ast_func)
+
+
+    def scan_for_decorated_functions(self):
         python_files = self.__find_python_files(self.__root_dir)
-        all_decorated_methods = {}
+        all_decorated_functions = {}
 
         for filepath in python_files:
-            try:
-                module = self.__load_module_from_file(filepath)
-                decorated_methods = self.__find_decorated_methods(module)
-                if decorated_methods:
-                    for name, func in decorated_methods:
-                        all_decorated_methods[name] = self.__parse_method(func)
-            except Exception as e:
-                print(f"Fehler beim Laden von {filepath}: {e}")
+            func_locals, functions = self.__load_functions_for_file(filepath)
+            for func_name in functions:
+                all_decorated_functions[func_name] = self.__to_function(func_name, func_locals, functions[func_name])
 
-        return all_decorated_methods
+        return all_decorated_functions
+
 
 
 def from_relative_path(relative_to) -> JapyFileScanner:
