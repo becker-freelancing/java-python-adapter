@@ -1,3 +1,1 @@
-# JAPY
-
-TODO: Documentation
+# For poetry -> Ignore
