@@ -1,8 +1,29 @@
 import asyncio
-from aiohttp import web
 import json
-from japy.japy_file_scanner import JapyFileScanner
+import socket
 import threading
+
+from aiohttp import web
+
+from japy.japy_file_scanner import JapyFileScanner
+
+
+def is_port_free(host, port):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        try:
+            s.bind((host, port))
+            s.close()
+            return True
+        except OSError:
+            return False
+
+
+def find_free_port(host='localhost', port_range=(49152, 65535)):
+    for port in range(port_range[0], port_range[1]):
+        if is_port_free(host, port):
+            return port
+
+    raise OSError(f"No free port in range {port_range} found")
 
 
 class JapyServer:
@@ -14,13 +35,16 @@ class JapyServer:
         self.server_runs = False
         self.server_started_event = threading.Event()
         self.loop = None
+        self.port = None
+        self.host = 'localhost'
 
     async def start_server(self):
         if self.server_runs:
             return
         self.runner = web.AppRunner(self.app)
         await self.runner.setup()
-        site = web.TCPSite(self.runner, '127.0.0.1', 12345)
+        self.port = find_free_port()
+        site = web.TCPSite(self.runner, self.host, self.port)
         await site.start()
         self.server_runs = True
         self.server_started_event.set()
@@ -28,8 +52,8 @@ class JapyServer:
     async def stop_server(self):
         if self.server_runs:
             self.server_runs = False
-            await self.runner.cleanup()  # Säubert den Server
-            self.loop.stop()  # Beende den Event-Loop
+            await self.runner.cleanup()
+            self.loop.stop()
 
     async def handle_call_method(self, request):
         try:
@@ -57,8 +81,17 @@ class JapyServer:
         except Exception as e:
             return web.json_response({'error': str(e)}, status=500)
 
+    def handle_is_alive(self, request):
+        response = {
+            "alive": True,
+            "host": self.host,
+            "port": self.port
+        }
+        return web.json_response(response, status=200)
+
     def define_routes(self):
         self.app.router.add_post('/japy/call_method', self.handle_call_method)
+        self.app.router.add_get('/japy/is_alive', self.handle_is_alive)
 
 
 japy_server_manager = None

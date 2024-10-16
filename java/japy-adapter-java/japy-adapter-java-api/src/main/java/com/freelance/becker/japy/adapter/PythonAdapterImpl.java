@@ -8,6 +8,8 @@ import java.util.Optional;
 
 public class PythonAdapterImpl implements PythonAdapter{
 
+    private static final String HOST = "localhost";
+
     private PythonHttpClient pythonClient;
 
     protected PythonAdapterImpl(PythonHttpClient pythonClient) {
@@ -15,8 +17,7 @@ public class PythonAdapterImpl implements PythonAdapter{
     }
 
     public PythonAdapterImpl(){
-        //TODO: Dynamic Port
-        this(new PythonHttpClient("127.0.0.1", 12345));
+        this(new PythonHttpClient(HOST, new DynamicPortFinder(HOST).findPort()));
     }
 
     @Override
