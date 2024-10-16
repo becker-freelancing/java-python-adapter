@@ -33,10 +33,21 @@ public class MethodReturnValue {
         return className;
     }
 
+    /**
+     * Transforms the return value into an Object of the given class. Attributes in this class which are not in return value are ignored and initialized with null.
+     *
+     * @param expectedClass Class
+     * @return T
+     */
     public <T> T castExactly(Class<T> expectedClass) {
         return castWithJson(returnValue, expectedClass);
     }
 
+    /**
+     * If the return value is a List wich contains elements of the same class, then this Method maps each object according to castExactly.
+     * @param expectedClass Class
+     * @return List
+     */
     public <T> List<T> castListWithSameClassesExactly(Class<T> expectedClass) {
         if (returnValue instanceof List<?> list) {
             List<T> casted = new ArrayList<>();
@@ -49,6 +60,11 @@ public class MethodReturnValue {
         throw new NotMappableException(returnValue.getClass());
     }
 
+    /**
+     *  If the List does contain more than one object, for each object in that List its type must be provided. Then each item in the List is mapped at its own according to castExactly.
+     * @param expectedClasses Class...
+     * @return List
+     */
     public List<Object> castListWithDifferentClassesExactly(Class<?>... expectedClasses) {
         if (returnValue instanceof List<?> list) {
             if (list.size() != expectedClasses.length) {
@@ -64,6 +80,11 @@ public class MethodReturnValue {
         throw new NotMappableException(returnValue.getClass());
     }
 
+    /**
+     * You can also define a Mapper by yourself. This mapper accepts a Map<String, Objects> which represents an Object in JSON format.
+     * @param mapper MethodReturnValueMapper
+     * @return T
+     */
     public <T> T mapCustom(MethodReturnValueMapper<T> mapper) {
         if (returnValue instanceof Map<?, ?> source)
             return mapper.map((Map<String, Object>) source);
