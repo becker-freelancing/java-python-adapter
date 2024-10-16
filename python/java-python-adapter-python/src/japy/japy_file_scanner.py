@@ -1,8 +1,9 @@
-import os
-import inspect
-from japy.japy_function_wrapper import JapyFunctionWrapper
 import ast
 import importlib
+import inspect
+import os
+
+from japy.japy_function_wrapper import JapyFunctionWrapper
 
 
 class JapyFileScanner:
@@ -55,6 +56,14 @@ class JapyFileScanner:
 
         return func_locals, functions
 
+    def __load_classes(self, tree, func_locals):
+        for node in tree.body:
+            if isinstance(node, ast.ClassDef):
+                func_code = compile(ast.Module(body=[node], type_ignores=[]), filename="<ast>", mode="exec")
+                exec(func_code, func_locals)
+
+        return func_locals
+
     def __load_functions_for_file(self, filepath):
         with open(filepath, 'r') as file:
             source_code = file.read()
@@ -63,6 +72,7 @@ class JapyFileScanner:
 
         func_locals = self.__load_imports(tree)
         func_locals, functions = self.__load_functions(tree, func_locals)
+        func_locals = self.__load_classes(tree, func_locals)
         return func_locals, functions
 
     def __to_function(self, func_name, func_locals, ast_func):
