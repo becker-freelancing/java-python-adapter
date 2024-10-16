@@ -36,6 +36,7 @@ class JapyServer:
         self.server_started_event = threading.Event()
         self.loop = None
         self.port = None
+        self.host = 'localhost'
 
     async def start_server(self):
         if self.server_runs:
@@ -43,7 +44,7 @@ class JapyServer:
         self.runner = web.AppRunner(self.app)
         await self.runner.setup()
         self.port = find_free_port()
-        site = web.TCPSite(self.runner, '127.0.0.1', self.port)
+        site = web.TCPSite(self.runner, self.host, self.port)
         await site.start()
         self.server_runs = True
         self.server_started_event.set()
@@ -80,8 +81,17 @@ class JapyServer:
         except Exception as e:
             return web.json_response({'error': str(e)}, status=500)
 
+    def handle_is_alive(self, request):
+        response = {
+            "alive": True,
+            "host": self.host,
+            "port": self.port
+        }
+        return web.json_response(response, status=200)
+
     def define_routes(self):
         self.app.router.add_post('/japy/call_method', self.handle_call_method)
+        self.app.router.add_get('/japy/is_alive', self.handle_is_alive)
 
 
 japy_server_manager = None
