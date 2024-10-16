@@ -24,4 +24,12 @@ public class PythonMethod {
     public List<PythonMethodArgument<?>> getArguments() {
         return arguments;
     }
+
+    @Override
+    public String toString() {
+        return "PythonMethod{" +
+                "name='" + name + '\'' +
+                ", arguments=" + arguments +
+                '}';
+    }
 }

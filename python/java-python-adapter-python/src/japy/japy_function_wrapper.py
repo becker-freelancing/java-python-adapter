@@ -1,4 +1,4 @@
-from japy.method_return_value import MethodReturnValue
+from japy.function_return_value import FunctionReturnValue
 
 
 class JapyFunctionWrapper:
@@ -16,4 +16,4 @@ class JapyFunctionWrapper:
             return_value = self.function_locals[self.function_name]()
         else:
             return_value = self.function_locals[self.function_name](*self.map_parameters(parameters))
-        return MethodReturnValue(return_value)
+        return FunctionReturnValue(return_value)

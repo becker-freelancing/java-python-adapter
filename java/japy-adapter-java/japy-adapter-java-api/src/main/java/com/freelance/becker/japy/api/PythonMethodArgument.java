@@ -1,6 +1,5 @@
 package com.freelance.becker.japy.api;
 
-//TODO: Generics needed?
 public class PythonMethodArgument <T> {
 
     private T argument;
@@ -11,5 +10,12 @@ public class PythonMethodArgument <T> {
 
     public T getArgument() {
         return argument;
+    }
+
+    @Override
+    public String toString() {
+        return "PythonMethodArgument{" +
+                "argument=" + argument +
+                '}';
     }
 }

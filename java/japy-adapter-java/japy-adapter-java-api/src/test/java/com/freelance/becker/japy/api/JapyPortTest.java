@@ -33,14 +33,34 @@ class JapyPortTest {
         assertTrue(methodReturnValue.isEmpty());
     }
 
-    @ParameterizedTest
-    @MethodSource("parametersWithArguments")
-    void testMethodWithArguments(PythonMethod pythonMethod) throws PythonMethodCallException {
+    static Stream<Arguments> parametersForComplexBaseClass() {
+        return Stream.of(
+                Arguments.of(new PythonMethod("create_complex_base_class"), new ComplexBaseClass("Arg1", "Arg2", "func"))
+        );
+    }
 
-        Optional<MethodReturnValue> methodReturnValue =
-                japyPort.callMethod(pythonMethod);
+    static Stream<Arguments> parametersForComplexSubClass() {
+        return Stream.of(
+                Arguments.of(new PythonMethod("create_complex_sub_class"), new ComplexSubClass("Arg1", "Arg2", "TEST", "abc")),
+                Arguments.of(new PythonMethod("create_complex_sub_class_with_param"), new ComplexSubClass("Arg1", "Arg2", "TEST", "abc2")),
+                Arguments.of(new PythonMethod("create_complex_sub_class_with_param", List.of(new PythonMethodArgument<>("JavaArg"))), new ComplexSubClass("Arg1", "Arg2", "TEST", "JavaArg")),
+                Arguments.of(new PythonMethod("create_complex_sub_class_with_inner_class"), new ComplexSubClass("Arg1", "Arg2", "TEST", "abc3", new ComplexBaseClass("Arg1", "Arg2", "func")))
+        );
+    }
 
-        assertFalse(methodReturnValue.isEmpty());
+    static Stream<Arguments> parametersForTupleWithComplexClasses() {
+        return Stream.of(
+                Arguments.of(new PythonMethod("create_complex_classes"), List.of(new ComplexBaseClass("Arg1", "Arg2", "func"), new ComplexSubClass("Arg1", "Arg2", "TEST", "abc")))
+        );
+    }
+
+    static Stream<Arguments> parametersWithArguments() {
+        return Stream.of(
+                Arguments.of(new PythonMethod("return_method_with_one_arg", List.of(new PythonMethodArgument<>("ARG1"))), "ARG1"),
+                Arguments.of(new PythonMethod("return_method_with_two_args", List.of(new PythonMethodArgument<>("ARG1"), new PythonMethodArgument<>("ARG2"))), "ARG1"),
+                Arguments.of(new PythonMethod("return_method_with_two_args_and_two_returns", List.of(new PythonMethodArgument<>("ARG1"), new PythonMethodArgument<>("ARG2"))), List.of("ARG1", "ARG2")),
+                Arguments.of(new PythonMethod("return_method_with_no_args"), "TEST")
+        );
     }
 
     @Test
@@ -51,6 +71,36 @@ class JapyPortTest {
 
     }
 
+    @ParameterizedTest
+    @MethodSource("parametersWithArguments")
+    void testMethodWithArguments(PythonMethod pythonMethod, Object expectedReturnValue) throws PythonMethodCallException {
+
+        Optional<MethodReturnValue> methodReturnValue =
+                japyPort.callMethod(pythonMethod);
+
+        assertFalse(methodReturnValue.isEmpty());
+        assertEquals(expectedReturnValue, methodReturnValue.get().getReturnValue());
+    }
+
+    @ParameterizedTest
+    @MethodSource("parametersForComplexBaseClass")
+    void testComplexBaseClass(PythonMethod pythonMethod, ComplexBaseClass expected) throws PythonMethodCallException {
+        Optional<MethodReturnValue> methodReturnValue = japyPort.callMethod(pythonMethod);
+
+        assertTrue(methodReturnValue.isPresent());
+        assertEquals(expected, methodReturnValue.get().castExactly(ComplexBaseClass.class));
+    }
+
+    @ParameterizedTest
+    @MethodSource("parametersForComplexSubClass")
+    void testComplexSubClass(PythonMethod pythonMethod, ComplexSubClass expected) throws PythonMethodCallException {
+        Optional<MethodReturnValue> methodReturnValue = japyPort.callMethod(pythonMethod);
+
+        assertTrue(methodReturnValue.isPresent());
+        assertEquals(expected, methodReturnValue.get().castExactly(ComplexSubClass.class));
+    }
+
+
     static Stream<Arguments> parametersWithoutArguments() {
         return Stream.of(
                 Arguments.of(new PythonMethod("void_method_with_one_arg", List.of(new PythonMethodArgument<>("ARG1")))),
@@ -59,13 +109,12 @@ class JapyPortTest {
         );
     }
 
-    static Stream<Arguments> parametersWithArguments() {
-        return Stream.of(
-                Arguments.of(new PythonMethod("return_method_with_one_arg", List.of(new PythonMethodArgument<>("ARG1")))),
-                Arguments.of(new PythonMethod("return_method_with_two_args", List.of(new PythonMethodArgument<>("ARG1"), new PythonMethodArgument<>("ARG2")))),
-                Arguments.of(new PythonMethod("return_method_with_two_args_and_two_returns", List.of(new PythonMethodArgument<>("ARG1"), new PythonMethodArgument<>("ARG2")))),
-                Arguments.of(new PythonMethod("return_method_with_no_args"))
-        );
+    @ParameterizedTest
+    @MethodSource("parametersForTupleWithComplexClasses")
+    void testTupleWithComplexClasses(PythonMethod pythonMethod, List<ComplexBaseClass> expected) throws PythonMethodCallException {
+        Optional<MethodReturnValue> methodReturnValue = japyPort.callMethod(pythonMethod);
+
+        assertTrue(methodReturnValue.isPresent());
+        assertEquals(expected, methodReturnValue.get().castListWithDifferentClassesExactly(ComplexBaseClass.class, ComplexSubClass.class));
     }
-  
 }
