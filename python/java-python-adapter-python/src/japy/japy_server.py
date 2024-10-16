@@ -1,5 +1,6 @@
 import asyncio
 import json
+import logging
 import socket
 import threading
 
@@ -7,6 +8,7 @@ from aiohttp import web
 
 from japy.japy_file_scanner import JapyFileScanner
 
+logger = logging.getLogger(__name__)
 
 def is_port_free(host, port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -41,6 +43,7 @@ class JapyServer:
     async def start_server(self):
         if self.server_runs:
             return
+        logger.info("Starting Japy server...")
         self.runner = web.AppRunner(self.app)
         await self.runner.setup()
         self.port = find_free_port()
@@ -48,12 +51,15 @@ class JapyServer:
         await site.start()
         self.server_runs = True
         self.server_started_event.set()
+        logger.info(f"Japy server started on {self.host}:{self.port}")
 
     async def stop_server(self):
         if self.server_runs:
+            logger.info("Stopping Japy server...")
             self.server_runs = False
             await self.runner.cleanup()
             self.loop.stop()
+            logger.info("Japy server stopped")
 
     async def handle_call_method(self, request):
         try:
@@ -61,6 +67,8 @@ class JapyServer:
 
             if not data:
                 return web.json_response({'error': 'No Data send'}, status=400)
+
+            logger.debug(f"Received Japy request for function {data['name']}")
 
             if data['name'] not in self.methods:
                 return web.json_response(
@@ -73,12 +81,15 @@ class JapyServer:
             return web.json_response(result.to_dict(), status=200)
 
         except KeyError as e:
+            logger.error(e)
             return web.json_response({'error': f'Missing key: {str(e)}'}, status=400)
 
         except json.JSONDecodeError as e:
+            logger.error(e)
             return web.json_response({'error': 'Invalid JSON format'}, status=400)
 
         except Exception as e:
+            logger.error(e)
             return web.json_response({'error': str(e)}, status=500)
 
     def handle_is_alive(self, request):

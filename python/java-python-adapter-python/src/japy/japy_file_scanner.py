@@ -1,10 +1,12 @@
 import ast
 import importlib
 import inspect
+import logging
 import os
 
 from japy.japy_function_wrapper import JapyFunctionWrapper
 
+logger = logging.getLogger(__name__)
 
 class JapyFileScanner:
     __root_dir: str
@@ -106,4 +108,5 @@ def from_relative_path(relative_to) -> JapyFileScanner:
     caller_file_path = caller_frame.f_code.co_filename
     base_dir = os.path.dirname(caller_file_path)
     base_dir = os.path.normpath(os.path.join(base_dir, relative_to))
+    logger.debug(f"Searching for japy-functions in dir {base_dir}")
     return JapyFileScanner(base_dir)
