@@ -6,7 +6,7 @@ import com.freelance.becker.japy.api.exception.PythonMethodCallException;
 
 import java.util.Optional;
 
-public class PythonAdapterImpl implements PythonAdapter{
+class PythonAdapterImpl implements PythonAdapter {
 
     private static final String HOST = "localhost";
 

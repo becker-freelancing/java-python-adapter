@@ -2,7 +2,7 @@ package com.freelance.becker.japy.adapter;
 
 import java.util.List;
 
-public class ErrorResponseObject {
+class ErrorResponseObject {
 
     private String error;
 

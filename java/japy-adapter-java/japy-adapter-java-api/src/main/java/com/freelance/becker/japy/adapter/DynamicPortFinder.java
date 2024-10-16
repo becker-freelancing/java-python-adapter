@@ -6,7 +6,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class DynamicPortFinder {
+class DynamicPortFinder {
 
     private static final int START_PORT = 49152;
     private static final int END_PORT = 65535;
