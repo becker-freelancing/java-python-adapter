@@ -6,7 +6,7 @@
 
     <groupId>com.becker-freelance.japy</groupId>
     <artifactId>japy-adapter-java</artifactId>
-    <version>1.0</version>
+    <version>2.0-SNAPSHOT</version>
 
     <name>Java Python Adapter</name>
     <description>Java Adapter to call Python methods</description>
