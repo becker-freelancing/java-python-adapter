@@ -1,9 +1,12 @@
 [tool.poetry]
-name = "untitled"
-version = "0.1.0"
+name = "japy"
+version = "1.0"
 description = ""
 authors = ["jasb <jason@becker-freelance.com>"]
 readme = "README.md"
+packages = [
+    { include = "japy", from = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
