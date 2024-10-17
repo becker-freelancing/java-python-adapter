@@ -38,6 +38,7 @@ public class MethodReturnValue {
      *
      * @param expectedClass Class
      * @return T
+     * @param <T>
      */
     public <T> T castExactly(Class<T> expectedClass) {
         return castWithJson(returnValue, expectedClass);
@@ -47,6 +48,7 @@ public class MethodReturnValue {
      * If the return value is a List wich contains elements of the same class, then this Method maps each object according to castExactly.
      * @param expectedClass Class
      * @return List
+     * @param <T>
      */
     public <T> List<T> castListWithSameClassesExactly(Class<T> expectedClass) {
         if (returnValue instanceof List<?> list) {
@@ -81,9 +83,10 @@ public class MethodReturnValue {
     }
 
     /**
-     * You can also define a Mapper by yourself. This mapper accepts a Map<String, Objects> which represents an Object in JSON format.
+     * You can also define a Mapper by yourself. This mapper accepts a Map which represents an Object in JSON format.
      * @param mapper MethodReturnValueMapper
      * @return T
+     * @param <T>
      */
     public <T> T mapCustom(MethodReturnValueMapper<T> mapper) {
         if (returnValue instanceof Map<?, ?> source)
