@@ -91,7 +91,7 @@ First, include this library with Maven or Gradle into your project:
 
 ````xml
 <dependency>
-    <groupId>com.freelance.becker.japy</groupId>
+    <groupId>com.becker-freelance.japy</groupId>
     <artifactId>japy-adapter-java</artifactId>
     <version>1.0</version>
 </dependency>
@@ -100,7 +100,7 @@ First, include this library with Maven or Gradle into your project:
 
 ````groovy
 dependencies {
-    implementation 'com.freelance.becker.japy:japy-adapter-java:1.0'
+    implementation 'com.becker-freelance.japy:japy-adapter-java:1.0'
 }
 ````
 
