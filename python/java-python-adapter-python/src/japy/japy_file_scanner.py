@@ -9,10 +9,10 @@ from japy.japy_function_wrapper import JapyFunctionWrapper
 logger = logging.getLogger(__name__)
 
 class JapyFileScanner:
-    __root_dir: str
+    __root_dirs: list[str]
 
-    def __init__(self, base_dir_path):
-        self.__root_dir = base_dir_path
+    def __init__(self, base_dir_paths: list[str]):
+        self.__root_dirs = base_dir_paths
 
     def __find_python_files(self, root_package):
         python_files = []
@@ -82,19 +82,38 @@ class JapyFileScanner:
 
 
     def scan_for_decorated_functions(self):
-        python_files = self.__find_python_files(self.__root_dir)
+        python_files = [self.__find_python_files(dir) for dir in self.__root_dirs]
         all_decorated_functions = {}
 
-        for filepath in python_files:
-            func_locals, functions = self.__load_functions_for_file(filepath)
-            for func_name in functions:
-                all_decorated_functions[func_name] = self.__to_function(func_name, func_locals, functions[func_name])
+        for filepaths in python_files:
+            for filepath in filepaths:
+                func_locals, functions = self.__load_functions_for_file(filepath)
+                for func_name in functions:
+                    all_decorated_functions[func_name] = self.__to_function(func_name, func_locals,
+                                                                            functions[func_name])
 
         return all_decorated_functions
 
 
+def from_relative_paths(relative_to: list[str]) -> JapyFileScanner:
+    """
+    Builds a JapyFileScanner from multiple paths relative to the path of the caller file.
 
-def from_relative_path(relative_to) -> JapyFileScanner:
+    Example:
+        - Caller filepath: /home/python/src/japy/scanner/scanner.py
+        - relative_to: [../../methods]
+        -> /home/python/src/methods/
+    """
+    frame = inspect.currentframe()
+    caller_frame = frame.f_back
+    caller_file_path = caller_frame.f_code.co_filename
+    base_dir = os.path.dirname(caller_file_path)
+    base_dirs = [os.path.normpath(os.path.join(base_dir, relative)) for relative in relative_to]
+    logger.debug(f"Searching for japy-functions in dir {base_dirs}")
+    return JapyFileScanner(base_dirs)
+
+
+def from_relative_path(relative_to: str) -> JapyFileScanner:
     """
     Builds a JapyFileScanner from a path relative to the path of the caller file.
 
@@ -109,4 +128,4 @@ def from_relative_path(relative_to) -> JapyFileScanner:
     base_dir = os.path.dirname(caller_file_path)
     base_dir = os.path.normpath(os.path.join(base_dir, relative_to))
     logger.debug(f"Searching for japy-functions in dir {base_dir}")
-    return JapyFileScanner(base_dir)
+    return JapyFileScanner([base_dir])
