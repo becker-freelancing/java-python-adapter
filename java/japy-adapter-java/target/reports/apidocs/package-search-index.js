@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.freelance.becker.japy.adapter"},{"l":"com.freelance.becker.japy.api"},{"l":"com.freelance.becker.japy.api.exception"}];updateSearchResults();

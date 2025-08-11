@@ -1,0 +1,14 @@
+com\freelance\becker\japy\adapter\PythonAdapterImplTest.class
+com\freelance\becker\japy\adapter\DynamicPortFinderTest.class
+com\freelance\becker\japy\adapter\PythonAdapterTest.class
+com\freelance\becker\japy\api\exception\PythonMethodCallExceptionTest.class
+com\freelance\becker\japy\api\PythonMethodArgumentTest.class
+com\freelance\becker\japy\api\PythonMethodTest.class
+com\freelance\becker\japy\api\MethodReturnValueTest.class
+com\freelance\becker\japy\api\exception\NotMappableExceptionTest.class
+com\freelance\becker\japy\api\ComplexBaseClass.class
+com\freelance\becker\japy\api\JapyPortTest.class
+com\freelance\becker\japy\api\ComplexSubClass.class
+com\freelance\becker\japy\adapter\ErrorResponseObjectTest.class
+com\freelance\becker\japy\adapter\PythonHttpClientTest.class
+com\freelance\becker\japy\adapter\NoPythonServerPortFoundExceptionTest.class

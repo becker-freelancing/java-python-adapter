@@ -31,6 +31,9 @@ class JapyFileScanner:
                 for alias in node.names:
                     module_name = alias.name
                     module = importlib.import_module(module_name)
+                    func_locals[module_name] = module
+                    if alias.asname:
+                        func_locals[alias.asname] = module
                     for attr in dir(module):
                         if not attr.startswith("__"):
                             func_locals[attr] = getattr(module, attr)

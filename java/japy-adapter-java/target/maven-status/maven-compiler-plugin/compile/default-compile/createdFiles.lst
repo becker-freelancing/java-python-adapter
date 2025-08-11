@@ -1,0 +1,14 @@
+com\freelance\becker\japy\adapter\ErrorResponseObject.class
+com\freelance\becker\japy\adapter\PythonAdapter.class
+com\freelance\becker\japy\api\JapyPort.class
+com\freelance\becker\japy\api\exception\PythonMethodCallException.class
+com\freelance\becker\japy\api\MethodReturnValueMapper.class
+com\freelance\becker\japy\adapter\DynamicPortFinder.class
+com\freelance\becker\japy\api\MethodReturnValue.class
+com\freelance\becker\japy\api\exception\NotMappableException.class
+com\freelance\becker\japy\api\PythonMethodArgument.class
+com\freelance\becker\japy\adapter\NoPythonServerPortFoundException.class
+com\freelance\becker\japy\adapter\PythonAdapterImpl.class
+com\freelance\becker\japy\api\PythonMethod.class
+com\freelance\becker\japy\adapter\PythonHttpClient.class
+com\freelance\becker\japy\api\JapyPortImpl.class

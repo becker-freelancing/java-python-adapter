@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5579a27a-cd02-45e9-981d-deab5aa40b1a" name="Changes" comment="Multiple File-Scanner Roots">
+      <change afterPath="$PROJECT_DIR$/python/java-python-adapter-python/dist/japy-2.0-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/java-python-adapter-python/dist/japy-3.1-py3-none-any.whl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/japy-adapter-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/japy-adapter-java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/java-python-adapter-python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/python/java-python-adapter-python/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/java-python-adapter-python/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/python/java-python-adapter-python/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/java-python-adapter-python/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/python/java-python-adapter-python/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/java-python-adapter-python/src/japy/japy_file_scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/java-python-adapter-python/src/japy/japy_file_scanner.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/multiple-roots" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Java can call Python methods" />
+        <option name="rewordedMessage" value="Java can call Python methods" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="f9aab275e69f157ac601dbb4b15e2cf729973a01" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1b075777-6a4e-4753-a2f5-a3dcaec35bb8" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2n9UBO3KmQmDlutNcp7AtXzncm5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.freelance.becker.japy.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.All in japy-adapter-java.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.DynamicPortFinderTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ErrorResponseObjectTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JapyAdapterImplTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.JapyAdapterImplTest.testMethodWithArguments.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JapyAdapterImplTest.testNonExistingMethod.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JapyPortTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.JapyPortTest.testComplexObjects (1).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JapyPortTest.testComplexObjects.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JapyPortTest.testMethodWithArguments.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JapyPortTest.testNonExistingMethod.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.MethodReturnValueTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.NoPythonServerPortFoundExceptionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.NotMappableExceptionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PythonHttpClientTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.PythonMethodArgumentTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.PythonMethodTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.PythonRunnerFactoryTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.PythonRunnerFactoryTest.fromFileName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PythonRunnerImplTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.PythonRunnerImplTest.testKillsProcessIfNotStoppable.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.adapter in japy-adapter-java-api.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.japy in japy-adapter-java-api.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.java in japy-adapter-java-api.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_japy_file_scanner.TestJapyFileScanner.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_japy_file_scanner.TestJapyFileScanner.test_scan_for_decorated_methods.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_japy_server.TestJapyServer.executor&quot;: &quot;Coverage&quot;,
+    &quot;Python tests.Python tests for test_japy_server.TestJapyServer.test_server_starts.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in japy.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.japy_server (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.japy_server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scanner.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server_2.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;release/2.0&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jasb/Documents/Priv/Brok/java-python-adapter/python/java-python-adapter-python/test/test_application_2/internal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31724137&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\python\java-python-adapter-python\test\test_application_2\internal" />
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\python\java-python-adapter-python" />
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\japy-adapter-java-api\src\main\resources" />
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\japy-adapter-java-api" />
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java" />
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\python\java-python-adapter-python" />
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\python\java-python-adapter-python\test\japy" />
+      <recent name="C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\python\java-python-adapter-python\src\japy" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.freelance.becker.japy.api" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.freelance.becker.japy.adapter" />
+      <recent name="com.freelance.becker.japy.api" />
+      <recent name="com.freelance.becker.japy.api.exception" />
+      <recent name="com.freelance.becker.japy.runner" />
+      <recent name="com.freelance.becker.japy.application" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="java in japy-adapter-java-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="japy-adapter-java-api" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/java/japy-adapter-java/japy-adapter-java-api/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="java-python-adapter-python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/java-python-adapter-python/test/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/java-python-adapter-python/test/test/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="java-python-adapter-python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Poetry (java-python-adapter-python)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/java-python-adapter-python/test/test_application/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_japy_file_scanner.TestJapyFileScanner" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="java-python-adapter-python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/java-python-adapter-python/test/japy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_japy_file_scanner.TestJapyFileScanner&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in japy" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="java-python-adapter-python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/java-python-adapter-python/test/japy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/python/java-python-adapter-python/test/japy&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="java-python-adapter-python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/java-python-adapter-python/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/python/java-python-adapter-python/test&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.java in japy-adapter-java-api" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python tests.Python tests for test_japy_file_scanner.TestJapyFileScanner" />
+      <item itemvalue="Python tests.Python tests in japy" />
+      <item itemvalue="Python tests.Python tests in test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in japy" />
+        <item itemvalue="Python tests.Python tests in test" />
+        <item itemvalue="Python tests.Python tests for test_japy_file_scanner.TestJapyFileScanner" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="JUnit.java in japy-adapter-java-api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5579a27a-cd02-45e9-981d-deab5aa40b1a" name="Changes" comment="" />
+      <created>1728384648586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728384648586</updated>
+      <workItem from="1728384649749" duration="8543000" />
+      <workItem from="1728457737288" duration="9184000" />
+      <workItem from="1728471454492" duration="592000" />
+      <workItem from="1728478023141" duration="5000" />
+      <workItem from="1728479153895" duration="989000" />
+      <workItem from="1728480218637" duration="216000" />
+      <workItem from="1728539807908" duration="3496000" />
+      <workItem from="1728649931910" duration="1730000" />
+      <workItem from="1728714980494" duration="9682000" />
+      <workItem from="1728819326529" duration="12000" />
+      <workItem from="1728819651194" duration="295000" />
+      <workItem from="1728880136439" duration="15000" />
+      <workItem from="1728881654186" duration="7565000" />
+      <workItem from="1728891767587" duration="4370000" />
+      <workItem from="1728905552789" duration="2699000" />
+      <workItem from="1728972308091" duration="52000" />
+      <workItem from="1728972833940" duration="20912000" />
+      <workItem from="1729053289241" duration="31567000" />
+      <workItem from="1734671900795" duration="632000" />
+      <workItem from="1749900336746" duration="2831000" />
+      <workItem from="1749911649783" duration="176000" />
+      <workItem from="1749960138985" duration="2202000" />
+    </task>
+    <task id="LOCAL-00001" summary="First implementation with Sockets">
+      <option name="closed" value="true" />
+      <created>1728480136970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728480136970</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First implementation with HTTP-Server">
+      <option name="closed" value="true" />
+      <created>1728650597108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728650597108</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Python-Side can scan files for Methods decorated with @japy_method">
+      <option name="closed" value="true" />
+      <created>1728716233567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728716233567</updated>
+    </task>
+    <task id="LOCAL-00004" summary="japy_server runs">
+      <option name="closed" value="true" />
+      <created>1728796486746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728796486746</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Java API definition">
+      <option name="closed" value="true" />
+      <created>1728881988585</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728881988585</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Java should be able to call Python methods">
+      <option name="closed" value="true" />
+      <created>1728882977541</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728882977541</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Java can call Python methods">
+      <option name="closed" value="true" />
+      <created>1728887453410</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728887453410</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Java can call Python methods">
+      <option name="closed" value="true" />
+      <created>1728887500015</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728887500015</updated>
+    </task>
+    <task id="LOCAL-00009" summary="No Stackoverflow when scanned Python files do contain non function code">
+      <option name="closed" value="true" />
+      <created>1728907325947</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728907325947</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Python Runner">
+      <option name="closed" value="true" />
+      <created>1728985170911</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728985170911</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Complex Objects are supported">
+      <option name="closed" value="true" />
+      <created>1729054337441</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729054337441</updated>
+    </task>
+    <task id="LOCAL-00012" summary="github Actions deleted">
+      <option name="closed" value="true" />
+      <created>1729054891400</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729054891400</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Python-Server scans for dynamic Port">
+      <option name="closed" value="true" />
+      <created>1729060353135</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729060353135</updated>
+    </task>
+    <task id="LOCAL-00014" summary="is_alive request added">
+      <option name="closed" value="true" />
+      <created>1729060604664</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729060604664</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Java Side automatically detects Japy Port">
+      <option name="closed" value="true" />
+      <created>1729064383587</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729064383587</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Logging on Python Side">
+      <option name="closed" value="true" />
+      <created>1729065100342</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729065100342</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Changed Visibility">
+      <option name="closed" value="true" />
+      <created>1729067463303</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1729067463303</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Refactoring Modules">
+      <option name="closed" value="true" />
+      <created>1729067722277</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1729067722277</updated>
+    </task>
+    <task id="LOCAL-00019" summary="README added">
+      <option name="closed" value="true" />
+      <created>1729081811713</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729081811713</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Javadoc added">
+      <option name="closed" value="true" />
+      <created>1729082463673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729082463673</updated>
+    </task>
+    <task id="LOCAL-00021" summary="LICENSE deleted">
+      <option name="closed" value="true" />
+      <created>1729082868587</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729082868587</updated>
+    </task>
+    <task id="LOCAL-00022" summary="LICENSE added">
+      <option name="closed" value="true" />
+      <created>1729083011038</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1729083011038</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Maven Central publishing logic added">
+      <option name="closed" value="true" />
+      <created>1729139481873</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1729139481873</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Prepared next SNAPSHOT iteration">
+      <option name="closed" value="true" />
+      <created>1729139715544</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729139715544</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Correct Maven and Gradle groupId">
+      <option name="closed" value="true" />
+      <created>1729140577740</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1729140577740</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Japy on PyPi released">
+      <option name="closed" value="true" />
+      <created>1729143084663</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1729143084663</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Updated Version">
+      <option name="closed" value="true" />
+      <created>1729143206872</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729143206872</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Multiple File-Scanner Roots">
+      <option name="closed" value="true" />
+      <created>1749901487417</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1749901487417</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Python-Side can scan files for Methods decorated with @japy_method" />
+    <MESSAGE value="japy_server runs" />
+    <MESSAGE value="Java API definition" />
+    <MESSAGE value="Java should be able to call Python methods" />
+    <MESSAGE value="Java can call Python methods" />
+    <MESSAGE value="No Stackoverflow when scanned Python files do contain non function code" />
+    <MESSAGE value="Python Runner" />
+    <MESSAGE value="Complex Objects are supported" />
+    <MESSAGE value="github Actions deleted" />
+    <MESSAGE value="Python-Server scans for dynamic Port" />
+    <MESSAGE value="is_alive request added" />
+    <MESSAGE value="Java Side automatically detects Japy Port" />
+    <MESSAGE value="Logging on Python Side" />
+    <MESSAGE value="Changed Visibility" />
+    <MESSAGE value="Refactoring Modules" />
+    <MESSAGE value="README added" />
+    <MESSAGE value="Javadoc added" />
+    <MESSAGE value="LICENSE deleted" />
+    <MESSAGE value="LICENSE added" />
+    <MESSAGE value="Maven Central publishing logic added" />
+    <MESSAGE value="Prepared next SNAPSHOT iteration" />
+    <MESSAGE value="Correct Maven and Gradle groupId" />
+    <MESSAGE value="Japy on PyPi released" />
+    <MESSAGE value="Updated Version" />
+    <MESSAGE value="Multiple File-Scanner Roots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multiple File-Scanner Roots" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_python_adapter$adapter_in_japy_adapter_java_api.ic" NAME="adapter in japy-adapter-java-api Coverage Results" MODIFIED="1728887137455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$PythonRunnerImplTest.ic" NAME="PythonRunnerImplTest Coverage Results" MODIFIED="1728984523699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.runner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$PythonMethodTest.ic" NAME="PythonMethodTest Coverage Results" MODIFIED="1729054220003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.api.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$japy_server__1_.coverage" NAME="japy_server (1) Coverage Results" MODIFIED="1728650307262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/java-python-adapter-python/src/japy" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$PythonMethodArgumentTest.ic" NAME="PythonMethodArgumentTest Coverage Results" MODIFIED="1729053989785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.api.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$japy_in_japy_adapter_java_api.ic" NAME="japy in japy-adapter-java-api Coverage Results" MODIFIED="1729054237861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$JapyAdapterImplTest.ic" NAME="JapyAdapterImplTest Coverage Results" MODIFIED="1728650384834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.application.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$JapyPortTest.ic" NAME="JapyPortTest Coverage Results" MODIFIED="1728995243771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.api.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1728894206614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/java-python-adapter-python/test/test" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$PythonRunnerFactoryTest.ic" NAME="PythonRunnerFactoryTest Coverage Results" MODIFIED="1728982541950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.runner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$scanner.coverage" NAME="scanner Coverage Results" MODIFIED="1728389465942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/java-python-adapter-python/src/japy" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$server_2.coverage" NAME="japy_server Coverage Results" MODIFIED="1728543186204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/java-python-adapter-python/src/japy" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$MethodReturnValueTest.ic" NAME="MethodReturnValueTest Coverage Results" MODIFIED="1729053829540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.api.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$All_in_japy_adapter_java.ic" NAME="All in japy-adapter-java Coverage Results" MODIFIED="1729067685322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$server.coverage" NAME="server Coverage Results" MODIFIED="1728480418723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/java-python-adapter-python/src/japy" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$.coverage" NAME=" Coverage Results" MODIFIED="1749901405453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/java-python-adapter-python/test/japy" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$DynamicPortFinderTest.ic" NAME="DynamicPortFinderTest Coverage Results" MODIFIED="1729063913657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.adapter.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$NoPythonServerPortFoundExceptionTest.ic" NAME="NoPythonServerPortFoundExceptionTest Coverage Results" MODIFIED="1729064066798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.adapter.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$japy_server.coverage" NAME="japy_server Coverage Results" MODIFIED="1728796255514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/java-python-adapter-python/src/japy" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$main.coverage" NAME="main Coverage Results" MODIFIED="1749902284394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$PythonRunnerFactoryTest_fromFileName.ic" NAME="PythonRunnerFactoryTest.fromFileName Coverage Results" MODIFIED="1728974482230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.runner.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$java_in_japy_adapter_java_api.ic" NAME="java in japy-adapter-java-api Coverage Results" MODIFIED="1729065426125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/java_python_adapter$PythonHttpClientTest.ic" NAME="PythonHttpClientTest Coverage Results" MODIFIED="1728998386016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.freelance.becker.japy.adapter.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_python_adapter$test.coverage" NAME="test Coverage Results" MODIFIED="1728794107846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/java-python-adapter-python/src/japy" />
+  </component>
+</project>

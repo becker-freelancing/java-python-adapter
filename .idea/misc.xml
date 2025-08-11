@@ -1,0 +1,27 @@
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Poetry (untitled)" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/java/java-python-adapter/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-python-adapter-java/pom.xml" />
+        <option value="$PROJECT_DIR$/java/japy-adapter-java/pom.xml" />
+        <option value="$PROJECT_DIR$/java/japy-adapter-java/japy-adapter-java-application/pom.xml" />
+        <option value="$PROJECT_DIR$/java/japy-adapter-java/japy-adapter-java-api/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/java/japy-adapter-java/japy-adapter-java-api/pom.xml" />
+        <option value="$PROJECT_DIR$/java/japy-adapter-java/japy-adapter-java-application/pom.xml" />
+        <option value="$PROJECT_DIR$/java/japy-adapter-java/japy-adapter-java-impl/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

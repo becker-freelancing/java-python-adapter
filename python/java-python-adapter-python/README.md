@@ -99,13 +99,13 @@ First, include this library with Maven or Gradle into your project:
 <dependency>
     <groupId>com.becker-freelance.japy</groupId>
     <artifactId>japy-adapter-java</artifactId>
-    <version>1.0</version>
+    <version>2.0</version>
 </dependency>
 ````
 
 ````groovy
 dependencies {
-    implementation 'com.becker-freelance.japy:japy-adapter-java:1.0'
+    implementation 'com.becker-freelance.japy:japy-adapter-java:2.0'
 }
 ````
 

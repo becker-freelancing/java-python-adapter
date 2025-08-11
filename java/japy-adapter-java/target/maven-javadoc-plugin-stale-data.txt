@@ -1,0 +1,53 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'C:/Users/jasb/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar;C:/Users/jasb/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'C:/Users/jasb/Documents/Priv/Brok/java-python-adapter/java/japy-adapter-java/src/main/java;C:/Users/jasb/Documents/Priv/Brok/java-python-adapter/java/japy-adapter-java/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/jasb/Documents/Priv/Brok/java-python-adapter/java/japy-adapter-java/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Java Python Adapter 2.0 API'
+-use
+-version
+-windowtitle
+'Java Python Adapter 2.0 API'
+com.freelance.becker.japy.adapter
+com.freelance.becker.japy.api.exception
+com.freelance.becker.japy.api
+C:\Users\jasb\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar = 1716144881000
+C:\Users\jasb\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar = 1714146969000
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java = 1728796668183
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\generated-sources\annotations = 1749902730000
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\allclasses-index.html = 1749902736738
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\allpackages-index.html = 1749902736743
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\element-list = 1749902736582
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\help-doc.html = 1749902736778
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\index-all.html = 1749902736769
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\index.html = 1749902736719
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\jquery-ui.overrides.css = 1749902736805
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\member-search-index.js = 1749902736752
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\module-search-index.js = 1749902736746
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\overview-summary.html = 1749902736773
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\overview-tree.html = 1749902736711
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\package-search-index.js = 1749902736748
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\script.js = 1749902736785
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\search.js = 1749902736788
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\serialized-form.html = 1749902736631
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\stylesheet.css = 1749902736782
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\tag-search-index.js = 1749902736753
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\target\reports\apidocs\type-search-index.js = 1749902736750

@@ -1,0 +1,14 @@
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\adapter\DynamicPortFinder.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\adapter\ErrorResponseObject.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\adapter\NoPythonServerPortFoundException.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\adapter\PythonAdapter.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\adapter\PythonAdapterImpl.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\adapter\PythonHttpClient.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\api\exception\NotMappableException.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\api\exception\PythonMethodCallException.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\api\JapyPort.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\api\JapyPortImpl.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\api\MethodReturnValue.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\api\MethodReturnValueMapper.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\api\PythonMethod.java
+C:\Users\jasb\Documents\Priv\Brok\java-python-adapter\java\japy-adapter-java\src\main\java\com\freelance\becker\japy\api\PythonMethodArgument.java
